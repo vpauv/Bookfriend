@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookFriend - About</title>
+        <!-- Conexión con CSS - hoja de estilos -->
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    
+  <header>
+    <div class = "logo_container">
+      <img src="./images/BOOKFRIEND-PhotoRoom.png-PhotoRoom.png" alt="">
+    </div>
+    
+    <nav>
+      <ul class="nav-section">
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="#" data-toggle="false" id="toggleButton" class="menu-button">Categorías</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div id="menu" class="menu-oculto">
+      <ul class="menu-oculto-content">
+          <li><a href="/novelas.html" class="nov"><img src="/icons/icons8-literatura-50.png" alt="">Novelas</a></li>
+          <li><a href="/fantasia.html" class="fant"><img src="/icons/icons8-unicornio-50.png" alt="">Fantasía</a></li>
+          <li><a href="/mangas.html" class="mang"><img src="/icons/icons8-monkey-d-luffy-50.png" alt="">Mangas</a></li>
+          <li><a href="/thrillers.html" class="thri"><img src="/icons/icons8-thriller-48.png" alt="">Thrillers</a></li>
+          <li><a href="/distopias.html" class="dist"><img src="/icons/distopia.png" alt="">Distopías</a></li>
+          <li><a href="/romance.html" class="rom"><img src="/icons/icons8-me-gusta-relleno-100.png" alt="">Romance</a></li>
+      </ul>
+  </div>
+  
+
+  </header>
+
+  <main class="main-about">
+    <section class="about-container">
+      <h2>¿Qué es BOOKFRIEND?</h2>
+
+      <div>
+        <P>
+          "En BookFriend, nos apasiona la literatura y queremos compartir esa pasión contigo. Somos un destino en línea para amantes de la lectura de todos los géneros. Ya sea que estés buscando reseñas de los libros más vendidos, descubrir nuevas joyas literarias, o sumergirte en géneros que te apasionan, estamos aquí para ofrecerte contenido de calidad. 
+        </P>
+        <P>Nuestro objetivo es ayudarte a encontrar tu próximo libro favorito y construir una comunidad de amantes de la lectura. Únete a nosotros en este viaje literario y descubre el mundo mágico de la palabra escrita."
+        </P>
+      </div>
+
+    </section>
+
+    <!-- FORMULARIOS -->
+    <form>
+      <!--  FORMULARIO TIPO INPUT TEXT -->
+  
+      <section class="titulo-recomendacion">
+        <p>Recomiendanos una nueva historia</p>
+        <!-- label - etiqueta para identificar cada respuesta -->
+        <label for="reseña-sugerida">
+          <!-- type - tipo ( TEXT - RADIO - CHECKBOX) -->
+          <input type="text">
+          <button>Enviar</button>
+        </label>
+      </section>
+
+      <section class="contenido-recomendacion">
+          <!--  FORMULARIO TIPO INPUT CHECKBOX -->
+        <p>¿Qué tipo de contenido te gustaría ver más en nuestra página?</p>
+        <label for="libros-populares">
+          <input type="checkbox" name="mas-contenido"> Reseñas de libros populares
+        </label>
+        <br>
+        <label for="libros-menos-conocidos">
+          <input type="checkbox" name="mas-contenido"> Reseñas de libros menos conocidos
+        </label>
+        <br>
+        <label for="entrevistas">
+          <input type="checkbox" name="mas-contenido"> Entrevistas con autores
+        </label>
+        <br>
+        <label for="consejos">
+          <input type="checkbox" name="mas-contenido"> Artículos sobre consejos de lectura
+        </label>
+        <br>
+        <label for="otro">
+          <input type="text" name="mas-contenido"> Otra (especifica)
+        </label>
+          <button>Enviar</button>
+        </section>
+    </form>
+
+  </main>
+  
+
+  <footer>
+    <div class="rating-section">
+      <p>Califica nuestra página:</p>
+      <div class="rating-icons">
+        <img class="rating-icon" data-state="original" src="/emoji/feliz.png" data-original="/emoji/feliz.png" data-alternativa="/emoji/sonriente.png" alt="Imagen 1">
+
+        <img class="rating-icon" data-state="original" src="/emoji/cara-feliz.png" data-original="/emoji/cara-feliz.png" data-alternativa="/emoji/feliz(1).png" alt="Imagen 2">
+
+        <img class="rating-icon" data-state="original" src="/emoji/esceptico.png" data-original="/emoji/esceptico.png" data-alternativa="/emoji/confuso.png" alt="Imagen 3">
+
+        <img class="rating-icon" data-state="original" src="/emoji/triste2.png" data-original="/emoji/triste2.png" data-alternativa="/emoji/triste.png" alt="Imagen 4">
+
+      </div>
+  </div>
+  
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

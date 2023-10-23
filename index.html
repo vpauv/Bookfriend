@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Información al navegador -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookFriend</title>
+    <!-- Conexión con CSS - hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+   
+</head>
+
+<!-- BODY - todo lo que ve el usuarix -->
+<body>
+
+
+  <header>
+    <div class = "logo_container">
+      <img src="./images/BOOKFRIEND-PhotoRoom.png-PhotoRoom.png" alt="">
+    </div>
+    
+    <nav>
+      <ul class="nav-section">
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="#" data-toggle="false" id="toggleButton" class="menu-button">Categorías</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div id="menu" class="menu-oculto">
+      <ul class="menu-oculto-content">
+          <li><a href="/novelas.html" class="nov"><img src="/icons/icons8-literatura-50.png" alt="">Novelas</a></li>
+          <li><a href="/fantasia.html" class="fant"><img src="/icons/icons8-unicornio-50.png" alt="">Fantasía</a></li>
+          <li><a href="/mangas.html" class="mang"><img src="/icons/icons8-monkey-d-luffy-50.png" alt="">Mangas</a></li>
+          <li><a href="/thrillers.html" class="thri"><img src="/icons/icons8-thriller-48.png" alt="">Thrillers</a></li>
+          <li><a href="/distopias.html" class="dist"><img src="/icons/distopia.png" alt="">Distopías</a></li>
+          <li><a href="/romance.html" class="rom"><img src="/icons/icons8-me-gusta-relleno-100.png" alt="">Romance</a></li>
+      </ul>
+  </div>
+  
+
+  </header>
+
+  <main>
+    
+        <!-- ÍNDICE -->
+    <!-- div - elemento de división // cajita invisible -->
+    <section class="sec-top-mangas">
+      <h1 id="top_mangas">TOP THRILLERS</h1>
+      <div class="top_mangas" >
+        <div> 
+          <img src="/images/el_resplandos.avif" alt="El Resplandor" class="imagen" data-modal-target="modal-1"> 
+          <a href="">El Resplandor - Stephen King </a>
+        </div>
+        <div> 
+          <img src="/images/dracula.jpg" alt="Drácula" class="imagen" data-modal-target="modal-2"> 
+          <a href="">Drácula - Bram Stoker</a>
+        </div>
+        <div> 
+          <img src="/images/frankenstein.jpg" alt="" class="imagen" data-modal-target="modal-3"> 
+          <a href="">Frankenstein - Mary Shelley</a>
+        </div>
+        <div> 
+          <img src="/images/exorcista.jpg" alt=""class="imagen" data-modal-target="modal-4"> 
+          <a href="">El exorcista - William Peter Blatty</a>
+        </div>
+        <div> 
+          <img src="/images/cthulhu.jpg" alt="" class="imagen" data-modal-target="modal-5"> 
+          <a href="">La llamada de cthulhu - H.P Lovecraft</a>
+        </div>
+      </div>  
+    </section>
+
+    <div class="modal" id="modal-1">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>El Resplandor</h2>
+              <h3>Stephen King</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/el_resplandos.avif" alt="El Resplandor">
+              <div>
+                <p>Jack Torrance es un hombre que ha tenido dificultades en su trabajo como profesor a causa de la bebida y su ira; a partir de ahí se sobrepone y le llega la opción de trabajar en el Overlook, un hotel de temporada perdido en las montañas, como cuidador durante la temporada de invierno en la que se encuentra cerrado y aislado a causa de la nieve. Allí que decide el buen hombre irse con su mujer Wendy y su hijo Danny. El pequeño de cinco años tiene algunas cualidades extraordinarias y en uno de sus «sueños» ve la palabra REDRUM y que ésta se relaciona con algo malo. Aunque no le da buena espina, el pequeño se ve dentro del hotel junto con su familia y su sensibilidad. Una vez allí comienzan a ocurrir cosas inexplicables.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-2">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Drácula</h2>
+              <h3>Bram Stoker</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/dracula.jpg" alt="Dracula">
+              <div>
+                <p>Jonathan Harker, un joven abogado inglés de Londres comprometido con Mina Murray, en la ciudad de Bistritz y debe viajar a través del desfiladero del Borgo hasta el remoto castillo del conde Drácula, en los Montes Cárpatos de Transilvania, una de las regiones más lejanas de la Hungría de esa época, para cerrar unas ventas con él. Convirtiéndose durante un breve período de tiempo en huésped del conde, el joven inglés va descubriendo que la personalidad de Drácula es, cuanto menos, extraña: no se refleja en los espejos, no come nunca en su presencia y hace vida nocturna. Poco a poco va descubriendo que es un ser despreciable, ruin y despiadado que acabará convirtiéndole en un rehén en el propio castillo. En el mismo también viven tres jóvenes y bellas vampiresas que una noche seducen a Jonathan y están a punto de chuparle la sangre, cosa que evita la interrupción del conde. Para evitarlo, Drácula les entrega un niño que ha secuestrado para que se beban su sangre. La madre del bebé no tarda en llegar al castillo para reclamarlo, pero el conde ordena a los lobos que la devoren. Teniendo al joven Jonathan Harker prisionero en su castillo, el Conde decide viajar a Londres y en este momento, con Drácula en Londres la novela se despliega en personajes y situaciones.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-3">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Frankenstein</h2>
+              <h3>Mary Shelley</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/frankenstein.jpg" alt="Dracula">
+              <div>
+                <p>Es una historia en la que Víctor, un joven científico, se obsesiona por lograr el mayor reto posible en el mundo: dar vida a un cuerpo muerto. Su éxito será su condena, la creación de un monstruo que, en respuesta a su rechazo por todos, se entrega por completo a saciar una sed de venganza hacia su creador, culpable de su desgracia, y hacia todo lo que éste ama.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-4">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>El Exorcista</h2>
+              <h3>William Peter Blatty</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/exorcista.jpg" alt="El-exorcista">
+              <div>
+                <p>Una de las novelas más sobrecogedoras y terroríficas jamás escritas. El libro que inspiró la película homónima de culto.Basada en un hecho real, ocurrido en la década de los cuarenta del siglo pasado, la protagonista es una niña de apenas once años que sufre terribles transformaciones, sobre todo en su comportamiento. Ni médicos ni científicos ni psicólogos son capaces de hallar la causa de tal estado, y paulatinamente todo se va decantando hacia la hipótesis de que la niña está poseída por fuerzas demoniacas. Ha llegado el momento para el implacable rito que enfrenta a exorcista y demonio en un duelo mortal.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-5">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>La llamada de Cthulhu</h2>
+              <h3>H.P Lovecracft</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/cthulhu.jpg" alt="Dracula">
+              <div>
+                <p>El narrador de esta historia comienza una insólita investigación tras la muerte en extrañas circunstancias de su tío abuelo George Gammell Angell, profesor de lenguas semíticas en la Universidad de Brown.  Siguiendo los pasos de su tío, así como los de otros personajes vinculados a él por sus oscuros estudios, el narrador entra en contacto con un material de lo más sensible: unas horripilantes historias que giran en torno a un arcano monstruo o ser cósmico llamado Cthulhu que amenaza la cordura y la vida de cuantos son conscientes de su existencia.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+
+    <section class="sec-top-mangas">
+      <h1>TOP DISTOPÍAS</h1>
+      <div class="top_mangas">
+        <div> 
+          <img src="/images/1984.webp" alt="Harry Potter" class="imagen" data-modal-target="modal-21"> 
+          <a href="">1984 - George Orwell</a>
+        </div>
+        <div> 
+          <img src="/images/un-mundo-feliz.jpg" alt="" class="imagen" data-modal-target="modal-22"> 
+          <a href="">Un mundo feliz - Aldous Huxley</a>
+        </div>
+        <div> 
+          <img src="/images/v-vendetta.jpg" alt="" class="imagen" data-modal-target="modal-23"> 
+          <a href=""> V de Vendetta - Alan Moore</a>
+        </div>
+        <div> 
+          <img src="/images/naranja-mecanica.jpg" alt="" class="imagen" data-modal-target="modal-24"> 
+          <a href="">La naranja mecánica - Anthony Burgess</a>
+        </div>
+        <div> 
+          <img src="/images/el-señor-de-las-moscas.jpg" alt="" class="imagen" data-modal-target="modal-25"> 
+          <a href="">El señor de las moscas - William Golding</a>
+        </div>
+      </div>  
+    </section>
+    
+
+    <div class="modal" id="modal-21">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>1984</h2>
+              <h3>George Orwell</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/1984.webp" alt="1984">
+              <div>
+                <p>
+                  Winston Smith decide rebelarse ante un gobierno totalitario que controla cada uno de los movimientos de sus ciudadanos y castiga incluso a aquellos que delinquen con el pensamiento. Consciente de las terribles consecuencias que puede acarrear la disidencia, Winston se une a la ambigua Hermandad por mediación del líder O’Brien. Paulatinamente, sin embargo, nuestro protagonista va comprendiendo que ni la Hermandad ni O’Brien son lo que aparentan, y que la rebelión, al cabo, quizá sea un objetivo inalcanzable. Por su magnífico análisis del poder y de las relaciones y dependencias que crea en los individuos, 1984 es una de las novelas más inquietantes y atractivas de este siglo.
+                  </p>
+           </div>
+
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-22">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Un mundo feliz</h2>
+              <h3>Aldous Huxley</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/un-mundo-feliz.jpg" alt="">
+              <div>
+                <p>Los peores vaticinios del capitalismo se han cumplido: triunfan los dioses del consumo y la comodidad, y el orbe se divide en diez zonas en apariencia seguras y estables. Los humanos ya no procrean, el sexo se ha convertido solo en una diversión y las letras del alfabeto griego se han pervertido para clasificar a los seres humanos por castas. Todos aceptan su lugar en la nueva jerarquía social, perfectamente ordenada. Los valores humanos esenciales no tienen cabida en este mundo y los habitantes se crean in vitro con una técnica concebida a imagen y semejanza de una cadena de montaje. El soma, la droga por excelencia en este mundo distópico que propone Huxley, ayuda a los habitantes a escapar de la rutina. A cambio de este orden pulcro, la libertad de expresión y el pensamiento crítico han sido erradicados. Bernard Marx, el protagonista de la novela, inconformista e inteligente, deberá probar los límites de la sociedad que lo ha engendrado, iniciando un viaje más allá de las fronteras distópicas de su universo.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-23">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>V de Vendetta</h2>
+              <h3>Alan Moore</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/v-vendetta.jpg" alt="">
+              <div>
+                <p>V de Vendetta, además de ser una de las mayores obras maestras de la industria del cómic y una de las obras más personales y logradas de sus autores, Alan Moore y David Lloyd, es una historia espeluznante y terriblemente real acerca de la pérdida de la libertad y de la identidad del individuo que se ve inmerso en un mundo hostil, frío… </p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-24">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>La naranja mecánica</h2>
+              <h3>Anthony Burgess</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/naranja-mecanica.jpg" alt="">
+              <div>
+                <p>Una historia oscura de amor y demonios, que entusiasmará a las seguidoras de Stephenie Meyer y L.J.Smith.
+
+                  En el Pandemonium, la discoteca de moda de Nueva York, Clary sigue a un atractivo chico de pelo azul hasta que presencia su muerte a manos de tres jóvenes cubiertos de extraños tatuajes. Desde esa noche, su destino se une al de esos tres cazadores de sombras, guerreros dedicados a liberar a la tierra de demonios y, sobre todo, al de Jace, un chico con aspecto de ángel y tendencia a actuar como un idiota... </p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-25">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>El señor de las moscas</h2>
+              <h3>William Golding</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/el-señor-de-las-moscas.jpg" alt="">
+              <div>
+                <p>El señor de las moscas es Premio Nobel de Literatura 1983, una fábula moral acerca de la condición humana.Urdida en torno a la situación límite de una treintena de muchachos en una isla desierta, El Señor de las Moscas es una magnífica novela que admite lecturas diferentes e incluso opuestas. En efecto, si algunos pueden ver en esta indagación de William Golding en la condición humana la ilustración de que la agresividad criminal se halla entre los instintos básicos del hombre, otros podrán considerarla como una parábola que cuestiona un tipo de educación represiva que no hace sino incubar explosiones de barbarie prestas a estallar en cuanto los controles se relajan.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+
+    <section class="sec-top-mangas">
+      <h1>TOP MANGAS</h1>
+      <div class="top_mangas">
+        <div> 
+          <img src="/images/one_piece.webp" alt="One Piece"class="imagen" data-modal-target="modal-6"> 
+          <a href="">One Piece - Eichiro Oda</a>
+        </div>
+        <div> 
+          <img src="/images/Jujutsu_Kaisen.webp" alt="Jujutsu Kaisen" class="imagen" data-modal-target="modal-7"> 
+          <a href="">Jujutsu Kaisen - Gege Akutami</a>
+        </div>
+        <div> 
+          <img src="/images/spy_x_family.webp" alt=""class="imagen" data-modal-target="modal-8"> 
+          <a href="">Spy X Family - Tatsuya Endō</a>
+        </div>
+        <div> 
+          <img src="/images/mha.webp" alt=""class="imagen" data-modal-target="modal-9"> 
+          <a href="">My Hero Academia - Kohei Horikoshi</a>
+        </div>
+        <div> 
+          <img src="/images/blue_lock.jpg" alt="" class="imagen" data-modal-target="modal-10"> 
+          <a href="">Blue Lock - Muneyuki Kaneshiro</a>
+        </div>
+      </div>  
+    </section>
+
+    <div class="modal" id="modal-6">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>One Piece</h2>
+              <h3>Eichiro Oda</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/one_piece.webp" alt="El Resplandor">
+              <div>
+                <p>
+                  Es la era de los grandes piratas. Con sus banderas ondeando al viento, luchan entre ellos con el fin de llegar hasta el gran tesoro One Piece, el legado del legendario rey de los piratas Gold Roger. Ese gran pirata es el objeto de admiración de un muchacho llamado Luffy, que se ha hecho amigo de Shanks el Pelirrojo, capitán de una banda pirata que suele amarrar el barco en el muelle de su aldea. Un buen día, Luffy se come una fruta demoníaca, botín que había conseguido la banda de Shanks, y su cuerpo adquiere las propiedades de la goma elástica.
+                  </p>
+                <p> A cambio, pierde la capacidad de flotar en el agua y, por lo tanto, de nadar. Mientras la banda se encuentra fuera de la aldea, Luffy provoca a unos bandoleros de montaña cuyo líder lo secuestra y lo lanza en medio del mar. Mientras bracea para no hundirse, una bestia marina llega para engullirlo… ¡Pero Shanks acude a nado y le salva! Luffy sobrevive, pero a cambio el pirata pierde el brazo izquierdo.
+                </p>
+                <p> 10 años después de despedirse de Shanks y los suyos, con el sombrero de paja que el Pelirrojo le prestó como marca distintiva, Luffy se hace a la mar en solitario. ¡Comienza su viaje con la meta puesta en llegar a ser el rey de los piratas!</p>
+           </div>
+
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-7">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Jujutsu Kaisen</h2>
+              <h3>Gege Akutami</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/Jujutsu_Kaisen.webp" alt="Dracula">
+              <div>
+                <p>Yûji Itadori es un estudiante de primer curso en un instituto de provincias japonés. Un joven dotado de una fuerza y agilidad sobrehumanas. Su vida transcurre tranquila entre las visitas a su abuelo al hospital, asistir a clase y ser parte del grupo de ocultismo de su instituto. En una sesión de espiritismo de éste se topará con una maldición. Seres sobrenaturales que se alimentan de las emociones negativas que manan de las personas. Unos seres que intentan hacerse con otra maldición de categoría especial escondida en la escuela y contenida por un sello mágico. Bienvenidos al mundo de Jujutsu kaisen.
+                </p>
+                <p>Después de interponerse en la lucha entre Megumi Fushiguro, estudiante de primer año de la escuela de hechiceros, y la maldición, Yûgi tiene la ocurrencia de tragarse la maldición de categoría especial. En realidad un dedo de un demonio llamado Sukuna. Por ello acaba convirtiéndose así en un recipiente que contiene a esta. Hecho por el cual es condenado a muerte de manera fulminante. Una condena que Fushiguro consigue aplazar hasta que Yûgi pueda hacerse con todas las partes del demonio dispersas por Japón. Objetivo para el cual es aceptado en la Escuela Técnica de Hechicería del Área Metropolitana de Tokio.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-8">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Spy X Family</h2>
+              <h3>Tatsuya Endō</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/spy_x_family.webp" alt="Dracula">
+              <div>
+                <p>Esta historia nos sitúa en un mundo en guerra entre los países de Westalis y Ostania (inspirados en la Alemania occidental y oriental de la Guerra Fría), donde ambos países despliegan sus mejores herramientas de inteligencia y espionaje. Entre todos los espías destaca especialmente Twilight, el mejor agente de Westalis, que en esta ocasión tendrá una importante misión: encargarse del poderoso político de Ostania, Donovan Desmond. Desgraciadamente, Desmond es un paranoico de la seguridad y las únicas apariciones públicas que realiza son los actos escolares de su hijo, en el elitista colegio Eden. Por esto, la única forma que tiene Twilight de acercarse a Donovan es simular ser un padre de familia. </p>
+                <p>Bajo la identidad falsa de Loid Forger, Twilight tendrá que montar una familia en solo 7 días. Para ello adoptará a la huérfana Anya como su hija y convencerá a la civil Yor Briar para que se haga pasar por su esposa. Irónicamente, ambas también tienen un secreto: Yor es una asesina a sueldo, conocida como Thorn Princess y Anya es una esper, prófuga de un laboratorio secreto, capaz de leer la mente de la gente. </p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-9">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>My Hero Academia</h2>
+              <h3>Kohei Horikoshi</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/mha.webp" alt="My Hero Academia">
+              <div>
+                <p>La historia tiene lugar en un mundo donde el 80% de la población ha desarrollado «dones», surgiendo así héroes y villanos. Entre el 20% de personas sin dones, se encuentra Izuku Midoriya, cuyo mayor deseo es poder estudiar en la U.A. (siglas de Yûei, una escuela de héroes) y convertirse en un héroe como su ídolo All Might.​ Un día, tras conocer personalmente a All Might, este le ofrece heredar sus poderes al ver su gran determinación a pesar de haber nacido sin don. Izuku accede y empieza a estudiar en la U.A, donde hace nuevos amigos, conoce otros héroes profesionales, aprende a dominar sus poderes y se enfrenta a auténticos villanos. </p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-10">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Blue Lock</h2>
+              <h3>Muneyuki Kaneshiro</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/blue_lock.jpg" alt="Blue Lock">
+              <div>
+                <p>La trama se sitúa tras la eliminación de la selección de Japón de la Copa Mundial de Fútbol de 2018, lo que impulsa a la federación del país a iniciar un programa de entrenamientos para preparar a un equipo de estudiantes de preparatoria, que participarán en el Mundial de 2022. El protagonista Isagi Yoichi, un delantero, recibe una invitación para unirse a este programa después del intento fallido de su equipo de llegar a las Nacionales, debido a que pasó el balón a su compañero, que falló el tiro, en lugar de marcar él mismo. El coordinador del entrenamiento, Ego Jinpachi, tiene la intención de acabar con la idea del “Japón débil en fútbol” aplicando un nuevo régimen, que consiste en aislar a 300 jóvenes delanteros en una institución parecida a una prisión llamada “Blue Lock”. Allí son sometidos a un riguroso entrenamiento con el objetivo de incrementar su individualismo y crear al mejor delantero del mundo.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <section class="sec-top-mangas">
+      <h1>TOP NOVELAS</h1>
+      <div class="top_mangas">
+        <div> 
+          <img src="/images/los-miserables.jpg" alt="" class="imagen" data-modal-target="modal-11"> 
+          <a href="">Los miserables - Victor Hugo</a>
+        </div>
+        <div> 
+          <img src="/images/cien-años-de-soledad.webp" alt="Jujutsu Kaisen" class="imagen" data-modal-target="modal-12"> 
+          <a href="">Cien años de soledad - Gabriel García Márquez</a>
+        </div>
+        <div> 
+          <img src="/images/crimen-castigo.png" alt="" class="imagen" data-modal-target="modal-13"> 
+          <a href="">Crimen y castigo - Fiódor Dostoievski</a>
+        </div>
+        <div> 
+          <img src="/images/principito.jpg" alt="" class="imagen" data-modal-target="modal-14"> 
+          <a href="">El Principito - Antoine de Saint-Exupéry</a>
+        </div>
+        <div> 
+          <img src="/images/kafka-en-la-orilla.jpg" alt="" class="imagen" data-modal-target="modal-15"> 
+          <a href="">Kafka en la orilla - Haruki Murakami</a>
+        </div>
+      </div>  
+    </section>
+
+    <div class="modal" id="modal-11">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Los miserables/h2>
+              <h3>Victor Hugo</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/los-miserables.jpg" alt="1984">
+              <div>
+                <p>
+                  Jean Valjean es un ex-presidiario. Cuando llega al pueblo de D., rumbo a su pueblo natal y presenta su pasaporte -en el que figura como ex-reo y ''hombre peligroso''- en el ayuntamiento, nadie se digna a acogerle y a darle de comer, salvo don Bienvenido, el párroco. Traicionando a su protector, Valjean le roba la cubertería de plata, pero le detienen en los alrededores, llevándole frente al párroco. Don Bienvenido decide no denunciarle, pero le arranca una promesa: usar lo que ha tomado para hacerse un hombre de bien.
+                  </p>
+           </div>
+
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-12">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Cien años de soledad</h2>
+              <h3>Gabriel García Márquez</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/cien-años-de-soledad.webp" alt="">
+              <div>
+                <p>Un referente imprescindible de la vida y la narrativa latinoamericana.«Muchos años después, frente al pelotón de fusilamiento, el coronel Aureliano Buendía había de recordar aquella tarde remota en que su padre lo llevó a conocer el hielo. Macondo era entonces una aldea de veinte casas de barro y cañabrava construidas a la orilla de un río de aguas diáfanas que se precipitaban por un lecho de piedras pulidas, blancas y enormes como huevos prehistóricos. El mundo era tan reciente, que muchas cosas carecían de nombre, y para mencionarlas había que señalarlas con el dedo.»Con estas palabras empieza la novela ya legendaria en los anales de la literatura universal, una de las aventuras literarias más fascinantes de nuestro siglo. Millones de ejemplares de Cien años de soledad leídos en todas las lenguas y el Premio Nobel de Literatura coronando una obra que se había abierto paso «boca a boca» -como gusta decir al escritor- son la más palpable demostración de que la aventura fabulosa de la familia Buendía-Iguarán, con sus milagros, fantasías, obsesiones, tragedias, incestos, adulterios, rebeldías, descubrimientos y condenas, representaba al mismo tiempo el mito y la historia, la tragedia y el amor del mundo entero.Pablo Neruda dijo...«El Quijote de nuestro tiempo.» 
+                </p>
+             
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-13">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Crimen y Castigo</h2>
+              <h3>Fiódor Dostoyevski</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/crimen-castigo.png" alt="Dracula">
+              <div>
+                <p>La obra entera del gran escritor ruso gira alrededor de dos ideas fundamentales: la transgresión de las leyes morales y sociales, basada en el supuesto de la libertad humana, y el sometimiento posterior e inevitable a dichas leyes, dramática consecuencia de la negación de esa misma libertad. Desde sus primeros transgresores hasta los parricidas de Los hermanos Karamazov, Fedor Mijailovich describe paso a paso la parábola del crimen, identificado en todas sus manifestaciones con la autodestrucción, y del castigo, o reconocimiento del error de haber osado, asumido hasta sus últimas consecuencias de humillación y dolor. Sin embargo, es en la presente narración donde este ciclo de osadía y arrepentimiento se expresa en su más perfecta forma. Crimen y castigo tiene muy pocos rivales en la novelística mundial, y aun se ha juzgado aquí el arte de Dostoievski superior al de un Henry James.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-14">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>El Principito</h2>
+              <h3>Antoine de Saint-Exupéry</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/principito.jpg" alt="My Hero Academia">
+              <div>
+                <p>El principito vive en un pequeño planeta, el asteroide B 612, en el que hay tres volcanes (dos de ellos activos
+                  y uno no) y una rosa. Pasa sus días cuidando de su planeta, y quitando los árboles baobab que
+                  constantemente intentan echar raíces allí. De permitirles crecer, los árboles partirían su planeta en pedazos.
+                  Un día decide abandonar su planeta, quizás cansado de los reproches y reclamos de la rosa, para explorar
+                  otros mundos. Aprovecha una migración de pájaros para emprender su viaje y recorrer el universo; es así
+                  como visita seis planetas, cada uno de ellos habitado por un personaje: un rey, un vanidoso, un borracho, un
+                  hombre de negocios, un farolero y un geógrafo, los cuales, a su manera, demuestran lo vacías que se vuelven
+                  las personas cuando se transforman en adultas. </p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-15">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Kafka en la orilla</h2>
+              <h3>Haruki Murakami</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/kafka-en-la-orilla.jpg" alt="">
+              <div>
+                <p>Kafka Tamura se va de casa el día en que cumple quince años. Los motivos, si es que los hay, son las malas relaciones con su padre –un famoso escultor convencido de que su hijo repetirá el aciago sino del Edipo de la tragedia clásica– y la sensación de vacío producida por la ausencia de su madre y su hermana, que se marcharon también cuando él era muy pequeño. Sus pasos le llevarán al sur del país, a Takamatsu, donde encontrará refugio en una peculiar biblioteca y conocerá a la misteriosa señora Saeki. Si sobre la vida de Kafka se cierne la tragedia (en el sentido clásico), sobre la de Satoru Nakata ya se ha abatido: de niño, durante la segunda guerra mundial, sufrió un extraño accidente del que salió con secuelas, sumido en una especie de olvido de sí, con dificultades para comunicarse... salvo con los gatos. A los sesenta años abandona Tokio y emprende un viaje que le conducirá también a la biblioteca de Takamatsu. Así, las vidas y destinos de los personajes se van entretejiendo en un curso inexorable que no atiende a razones ni voluntades. Pero, a veces, hasta los oráculos se equivocan.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <section class="sec-top-mangas">
+      <h1>TOP FANTASÍA</h1>
+      <div class="top_mangas">
+        <div> 
+          <img src="/images/harry-poter.webp" alt="Harry Potter" class="imagen" data-modal-target="modal-16"> 
+          <a href="">Harry Potter - J. K. Rowling</a>
+        </div>
+        <div> 
+          <img src="/images/el-senor-de-los-anillos.jpg" alt="" class="imagen" data-modal-target="modal-17"> 
+          <a href="">El señor de los anillos - J. R. R. Tolkien</a>
+        </div>
+        <div> 
+          <img src="/images/alicia-en-el-pais-maravillas.jpg" alt="" class="imagen" data-modal-target="modal-18"> 
+          <a href="">Alicia en el país de las maravillas - Lewis Carroll</a>
+        </div>
+        <div> 
+          <img src="/images/cazadores-de-sombras.jpg" alt="" class="imagen" data-modal-target="modal-19"> 
+          <a href="">Cazadorees de sombras - Cassandra Clare</a>
+        </div>
+        <div> 
+          <img src="/images/el-nombre-del-viento.jpg" alt="" class="imagen" data-modal-target="modal-20"> 
+          <a href="">El nombre del viento - Patrick Rothfuss</a>
+        </div>
+      </div>  
+    </section>
+    
+
+    <div class="modal" id="modal-16">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Harry Potter</h2>
+              <h3>H. J. Rowling</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/harry-poter.webp" alt="">
+              <div>
+                <p>
+                  La historia comienza con la celebración del mundo mágico. Durante muchos años, los magos habían vivido aterrorizados por el malvado mago Lord Voldemort. La noche del 31 de octubre, mató a Lily y James Potter. Sin embargo, cuando intento matar a su hijo de un año, Harry, la maldición asesina avada kedavra se vuelve sobre sí mismo. El cuerpo de Voldemort resulta destruido, pero él sobrevive: se convierte en algo más sutil que un fantasma, según sus propias palabras, que no está ni muerto ni vivo. Por su parte, a Harry solo le queda una cicatriz con forma de rayo en la frente que es el único remanente físico de la maldición de Voldemort. Aparte de la cicatriz, a Harry le queda una extraña conexión cerebral con Voldemort, la cual hace que Harry pueda sentir las emociones de Voldemort y hable parsel, el idioma de las serpientes. Harry es el único sobreviviente de la maldición asesina, y a raíz de la misteriosa derrota de Voldemort, el mundo mágico empieza a llamarlo como «el niño que sobrevivió». </p>
+                <p> El 2 de noviembre, Rubeus Hagrid, un semi-gigante, deja a Harry con los únicos parientes que le quedan, sus crueles tíos los Dursley. Estos son su tío Vernon, su tía Petunia y Dudley, su primo malcriado. Ellos le ocultan el hecho de que es un mago y le dicen que sus padres han muerto en un accidente de coche. A Harry le castigan severamente después de cualquier comportamiento extraño. Sin embargo, la víspera de su undécimo cumpleaños, Harry tiene su primer contacto con el mundo mágico cuando recibe cartas del Colegio Hogwarts de Magia y Hechicería, las cuales eran entregadas por lechuzas, aunque su tío impide que pueda leerlas. Ya en su cumpleaños, Hagrid aparece y le dice a Harry que existe un mundo mágico, y, puesto que él es un mago, ha sido invitado a asistir al colegio Hogwarts de Magia y Hechicería. 
+                </p>
+
+           </div>
+
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-17">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>El señor de los anillos</h2>
+              <h3>J. R. R. Tolkien</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/el-senor-de-los-anillos.jpg" alt="Dracula">
+              <div>
+                <p>Los Anillos de Poder fueron forjados en antiguos tiempos por los herreros Elfos, y Sauron, el Señor Oscuro, forjó el Anillo Único. Pero en una ocasión se lo quitaron, y aunque lo buscó por toda la Tierra Media nunca pudo encontrarlo. Al cabo de muchos años fue a caer casualmente en manos del hobbit Bilbo Bolsón. Sauron llegó a reunir todos los Grandes Anillos, pero continuaba buscando el Anillo Único que completaría el dominio de Mordor. Bilbo desapareció durante la celebración de su centesimodecimoprimer cumpleaños, y dejó a Frodo a cargo del Anillo, y con una peligrosa misión por delante: atravesar la Tierra Media, internarse en las sombras del País Oscuro y destruir el Anillo arrojándolo en las Grietas del Destino.
+                </p>
+               
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-18">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Alicia en el país de las maravillas</h2>
+              <h3>Lewis Carroll</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/alicia-en-el-pais-maravillas.jpg" alt="">
+              <div>
+                <p>Estás a punto de entrar en el mundo de Alicia, el más extraño y asombroso, disparatado e insólito que hayas conocido y que jamás vas a olvidar. En este mundo, los gatos desaparecen sonrientes, las reinas tienen ejércitos de naipes, los conejos visten chaleco y te apremian para que los sigas. Y si los sigues, caerás por el agujero de su madriguera? Hasta el País de las Maravillas.Allí, las reglas que conocemos no funcionan; en el País de las Maravillas todo tiene su propia lógica. La hora del té no acaba nunca, Tiempo es un señor que se enfada si no sigues el compás cuando cantas y las lágrimas pueden llegar a formar un mar si justo en aquel momento tu cuerpo se encoge hasta ser diminuto. Desde su publicación, Alicia en el país de las maravillas ha fascinado a lectores como tú. </p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-19">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Cazadorees de sombras </h2>
+              <h3>Cassandra Clare</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/cazadores-de-sombras.jpg" alt="">
+              <div>
+                <p>Una historia oscura de amor y demonios, que entusiasmará a las seguidoras de Stephenie Meyer y L.J.Smith.
+
+                  En el Pandemonium, la discoteca de moda de Nueva York, Clary sigue a un atractivo chico de pelo azul hasta que presencia su muerte a manos de tres jóvenes cubiertos de extraños tatuajes. Desde esa noche, su destino se une al de esos tres cazadores de sombras, guerreros dedicados a liberar a la tierra de demonios y, sobre todo, al de Jace, un chico con aspecto de ángel y tendencia a actuar como un idiota... </p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-20">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>El nombre del viento</h2>
+              <h3>Patrick Rothfuss</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/el-nombre-del-viento.jpg" alt="">
+              <div>
+                <p>Atípica, profunda y sincera, El nombre del viento es una novela de aventuras, de historias dentro de otras historias, de misterio, de amistad, de amor, de magia y de superación. La novela que ha consagrado a Patrick Rothfuss como fenómeno editorial de los últimos años. Músico, ladrón, mago, asesino y héroe: ésta es la leyenda de Kvothe. Su verdadera historia sólo empezará a contarla en El nombre del viento. Viajé, amé, perdí, confié y me traicionaron. En una posada en tierra de nadie, un hombre se dispone a relatar, por primera vez, la auténtica historia de su vida. Una historia que únicamente él conoce y que ha quedado diluida tras los rumores, las conjeturas y los cuentos de taberna que le han convertido en un personaje legendario a quien todos daban ya por muerto: Kvothe... músico, mendigo, ladrón, estudiante, mago, héroe y asesino. Ahora va a revelar la verdad sobre sí mismo. Y para ello debe empezar por el principio: su infancia en una troupe de artistas itinerantes, los años malviviendo como un ladronzuelo en las calles de una gran ciudad y su llegada a una universidad donde esperaba encontrar todas las respuestas que había estado buscando. Una estupenda y fuerade lo común novela de aventuras fantásticas. Una celebración del gusto de contar historias. JUSTO NAVARRO, El país</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+
+    <section class="sec-top-mangas">
+      <h1>TOP ROMANCE</h1>
+      <div class="top_mangas">
+        <div> 
+          <img src="/images/orgullo-y-prejuicio.jpeg" alt="Harry Potter" class="imagen" data-modal-target="modal-26"> 
+          <a href="">Orgullo y prejuicio - Jane Austen</a>
+        </div>
+        <div> 
+          <img src="/images/el-ruiseñor.jpg" alt="" class="imagen" data-modal-target="modal-27"> 
+          <a href="">El ruiseñor - Kristin Hannah</a>
+        </div>
+        <div> 
+          <img src="/images/el-amor-en-tiempos-de-colera.jpg" alt="" class="imagen" data-modal-target="modal-28"> 
+          <a href="">El amor en los tiempos del cólera - Gabriel García Márquez</a>
+        </div>
+        <div> 
+          <img src="/images/romeo-julieta.jpg" alt="" class="imagen" data-modal-target="modal-29"> 
+          <a href="">Romeo y Julieta - William Shakespeare</a>
+        </div>
+        <div> 
+          <img src="/images/cumbres-borrascosas.jpg" alt="" class="imagen" data-modal-target="modal-30"> 
+          <a href="">Cumbres borrascosas - Emily Brontë</a>
+        </div>
+      </div>  
+    </section>
+    
+
+    <div class="modal" id="modal-26">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Orgullo y prejuicio</h2>
+              <h3>Jane Austen</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/orgullo-y-prejuicio.jpeg" alt="1984">
+              <div>
+                <p>
+                  Elizabeth Bennet es una joven que, al igual que sus cinco hermanas, debe contraer matrimonio para que pueda recibir la herencia familiar cuando su padre fallezca. Sin embargo, la muchacha está decidida a casarse por amor y no por imposición. Pronto aparece en su camino Darcy, el amigo del señor Bingley, un hombre rico que acaba de llegar a la región y se establece como vecino de la familia Bennet.
+                  </p>
+           </div>
+
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-27">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>El ruiseñor</h2>
+              <h3>Kristin Hannah</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/el-ruiseñor.jpg" alt="">
+              <div>
+                <p>Esta novela está enmarcada en Francia, durante la Segunda Guerra Mundial. Vianne vive junto a su familia y su marido tiene que marcharse a combatir en el frente. Cuando los nazis invaden su país, Vienne se verá obligada a arriesgarlo todo, incluso convivir con el enemigo, para proteger a su hija.
+
+                  Entretanto, Isabelle, hermana de Vianne, se enamora de Gaëton, un partisano por el cual se une a la resistencia para luchar en la guerra.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-28">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>El amor en tiempos de cólera</h2>
+              <h3>Gabriel García Márquez</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images//el-amor-en-tiempos-de-colera.jpg" alt="">
+              <div>
+                <p>Ambientada entre 1880 y los años treinta en una ciudad portuaria innombrada pero que se ha identificado con la legendaria Cartagena colombiana, donde Gabriel García Márquez escribiera sus primeros textos, la apasionada historia que aquí se cuenta está entre las más recordadas de la literatura contemporánea. En una sociedad enfrentada entre el convencionalismo y la vanguardia, la costumbre y el progreso científico, el romance de Florentino Ariza y Fermina Daza está destinado a permanecer en la memoria de sus lectores en un tiempo idílico.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-29">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Romeo y Julieta</h2>
+              <h3>William Shakespeare</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images//romeo-julieta.jpg" alt="">
+              <div>
+                <p>La historia de Romeo y Julieta tiene antecedentes en la mitología y literatura griegas y en algunas leyendas medievales. Durante los siglos XV y XVI fue objeto de múltiples versiones, pero fue Shakespeare quien le infundió una pasión y un dramatismo inéditos hasta entonces y que han contribuido a mantener la leyenda en la memoria colectiva. En Verona, dos jóvenes enamorados, de dos familias enemigas, son víctimas de una situación de odio y violencia que ni desean ni pueden remediar. En una de esas tardes de verano en que el calor «inflama la sangre», Romeo, recién casado en secreto con su amada Julieta, mata al primo de ésta. A partir de ahí Shakespeare desencadena la tragedia y precipita los acontecimientos, guiados por el azar y la fatalidad. Ángel-Luis Pujante destaca en esta edición la fuerza poética y retórica de ROMEO Y JULIETA: los juegos de palabras, la coexistencia de prosa y verso, de lo culto y lo coloquial, de lo lírico y lo dramático contribuyen a intensificar los contrastes de la acción. Clara Calvo ofrece en la Guía de lectura una rica documentación complementaria y unas sugerentes propuestas que ayudan a enriquecer la lectura de esta obra capital de la literatura universal.</p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-30">
+      <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal_lib_title">
+              <h2>Cumbres Borrascosas</h2>
+              <h3>Emily Brontë</h3>
+            </div>
+            <div class="modal_resena">
+              <img src="/images/cumbres-borrascosas.jpg" alt="">
+              <div>
+                <p>Cumbres borrascosas, una de las novelas inglesas más relevantes del siglo XIX, narra la épica historia de Catherine y Heathcliff. Situada en los sombríos y desolados páramos de Yorkshire, constituye una asombrosa visión metafísica del destino, la obsesión, la pasión y la venganza. Publicada por vez primera en 1847, un año antes de morir su autora, esta obra rompió por completo con los cánones del decoro que la Inglaterra victoriana exigía a toda producción literaria.La novela retrata los problemas psicológicos de unos seres atormentados que arrastran una existencia mísera y maléfica. El clima de puritanismo y la ingenuidad de algunos personajes refuerzan la inteligente concepción de una narración efectiva y potente. </p>
+           </div>
+            </div>
+              <button class="modal-close">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- Link a otro sitio -->
+    <a href="https://algunoslibrosbuenos.com/category/resenas">Lee más aquí</a>
+
+  </main>
+  <script src="script.js"></script>
+
+
+
+</body>
+</html>

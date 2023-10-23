@@ -1,0 +1,782 @@
+body {
+    /* color de fondo */
+    background-color: #ffffff;
+    /* color de texto */
+    color: #1a1a1a;
+    /* fuente del texto */
+    font-family:'Red Hat Display', sans-serif;
+    /* borde gráfico : ancho estilo color  */
+    overflow-x: hidden;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    color: rgb(14, 0, 143);
+    font-size: 30px;
+    font-family: 'Rubik Mono One', monospace;
+    background-color: #86edff8c;
+
+}
+
+h2 {
+    color: rgb(14, 0, 143);
+    font-size: 30px;
+    font-family: 'Rubik Mono One', monospace;
+    background-color: #86edff8c;
+    padding: 20px;
+    margin: 0;
+    
+}
+
+h3{
+    background-color: #d3d3ff;
+    margin: 0;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;    
+}
+
+header {
+    background-color: #8886ff;
+    max-width: 100%;
+    max-height: 240px;
+
+}
+
+.logo_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+.logo_container img{
+    width: 500px;
+    max-width: 80%;
+    margin: 40px;
+}
+
+header nav{
+    background-color: #e0e1ff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+nav .nav-section{
+    font-family: 'Bakbak One', sans-serif;
+    display: flex;
+    justify-content:space-between;
+    list-style:none;
+    width: 330px;
+}
+
+
+nav .nav-section a{
+    color: rgba(47, 0, 255, 0.87);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    height: 60px;
+    width: 110px;
+}
+
+nav .nav-section a:hover{
+    color: #ffffff;
+    background-color: rgb(110, 78, 255);
+    font-weight: bold;
+}
+
+nav .nav-section a.active{
+    color: #ffffff;
+    background-color: rgb(110, 78, 255);
+    font-weight: bold;
+}
+
+
+.menu-oculto {
+    display: none;
+    position: relative;
+    right: 0;
+    left: 0;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.267);
+    z-index: 1;
+    background-color: #1a1a1a81;
+    width: 100%;
+    height: 200vh;
+
+}
+
+
+.menu-oculto-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+    list-style:none;
+    background-color: #ffffff;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 4% 0;
+
+}
+
+.menu-oculto-content li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-oculto-content a{
+    color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 90%;
+    height: 110px;
+
+}
+.menu-oculto-content a img{
+    margin-right: 15px;
+    width: 20%;
+}
+
+.menu-oculto-content a:hover{
+    color: #3a3a3a;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 90%;
+    height: 110px;
+    font-size: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.562);
+}
+
+.thri{
+    background-color: #9610369f;
+}
+
+.thri:hover{
+    background-color: #961036c9;
+}
+
+.rom{
+    background-color: #ffbbd5;
+}
+
+.rom:hover{
+    background-color: #ff7daf;
+}
+
+.fant{
+    background-color: rgb(194, 238, 255);
+}
+
+.fant:hover{
+    background-color:  rgb(136, 219, 252);
+    ;
+}
+
+.nov{
+    background-color: #ffe7b4;
+}
+
+.nov:hover{
+    background-color: #cfb886;
+}
+
+.dist{
+    background-color: #d3ffc1;
+}
+
+.dist:hover{
+    background-color: #b0e29c;
+}
+
+.mang{
+    background-color: #dbbde2;
+}
+
+.mang:hover{
+    background-color: #cf8fdd;
+}
+
+
+
+main .sec-top-mangas{
+    margin-top: 80px;
+}
+
+.sec-top-mangas h1{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.top_mangas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px 0;
+    height: 360px;  
+    background-color: rgba(129, 75, 255, 0.164);
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+.top_mangas div{
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgb(255, 255, 255);
+    display:grid;
+    justify-content: center;
+    align-items:center;
+    max-width: 200px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.562);
+}
+
+.top_mangas div:hover{
+    transform: scale(1.1);
+}
+
+.top_mangas a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.top_mangas img{
+    display: inline;
+    width: 400px;
+    max-width: 100%;
+    height: 300px;
+    max-height: 100%;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: scroll;
+}
+
+/* Añade estilos adicionales según tus preferencias */
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 800px;
+    max-width: auto;
+    overflow: hidden;
+}
+
+.modal_resena{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_resena div{
+    text-align: justify;
+    padding: 0 30px;
+}
+
+.modal_resena img{
+    max-width: 100%;
+    width: 300px;
+    height: 500px;
+    margin-left: 25px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.89);
+}
+
+.modal-close {
+    align-items: flex-end;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    background: #7674ff;
+    border-radius: 30%;
+}
+
+
+
+.main-categorias{
+    width: 100%;
+    margin-top: 10px;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+}
+.body-categorias {
+    background-color: #b0dfff63;
+}
+.body-categorias h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+    margin-top: 70px;
+    background: none;
+}
+
+.container{
+    margin: 5%;
+    padding: 3%;
+    background-color: #fff;
+    border-style: dashed;
+    border-color: #b3b3b3;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    margin-top: 10px;
+}
+
+.text-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-right: 2%;
+}
+.container img{
+    height: 500px;
+    width: 300px;
+    margin:0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.89);
+}
+
+.container p{
+    margin: 5px0 0 0 0;
+    text-align: justify;
+    padding: 0 0;
+}
+
+.container h2, h3{
+    text-align: center;
+}
+
+
+
+.categoria-thrillers h1{
+    color: rgb(65, 65, 65);
+}
+
+.categoria-thrillers{
+    background-color: rgba(255, 233, 220, 0.432);
+}
+
+.categoria-thrillers h2{
+    background-color:#e7898c;
+    color: rgb(146, 39, 39)
+}
+
+.categoria-thrillers h3{
+    background-color:  #fac5c5;
+    color: rgb(54, 54, 54);
+}
+
+
+.header-thrillers {
+    background-color: #be6467;
+}
+
+.logo_container-thriller img{
+    content: url(/images/BOOKFRIEND-thrillers.png) ;
+}
+
+.header-thrillers nav{
+    background-color: #8a3f51;
+}
+
+nav .nav-section-thrillers a{
+    color: rgb(49, 0, 0);
+}
+
+nav .nav-section-thrillers a:hover{
+    background-color: #800623;
+    font-weight: bold;
+}
+
+nav .nav-section-thrillers a.active{
+    color: #ffffff;
+    background-color: rgb(255, 134, 78);
+    font-weight: bold;
+}
+
+
+.categoria-distopias h1{
+    color: rgb(65, 65, 65);
+}
+
+.categoria-distopias{
+    background-color: rgba(221, 255, 194, 0.315);
+}
+
+.categoria-distopias h2{
+    background-color:#d3ffc1;
+    color: rgb(15, 112, 3);
+}
+
+.categoria-distopias h3{
+    background-color:  #b2d1a6;
+    color: rgb(54, 54, 54);
+}
+
+
+.header-distopias {
+    background-color: #d3ffc1;
+}
+
+.logo_container-distopias img{
+    content: url(/images/BOOKFRIEND-distopias.png) ;
+}
+
+.header-distopias nav{
+    background-color: #97c786;
+}
+
+
+nav .nav-section-distopias a{
+    color: rgb(8, 54, 14);;
+}
+
+nav .nav-section-distopias a:hover{
+    background-color: rgb(63, 114, 21);
+    font-weight: bold;
+}
+
+nav .nav-section-distopias a.active{
+    color: #ffffff;
+    background-color: rgb(63, 114, 21);
+    font-weight: bold;
+}
+
+
+.categoria-romance h1{
+    color: rgb(65, 65, 65);
+}
+
+.categoria-romance{
+    background-color: #fceff5;
+}
+
+.categoria-romance h2{
+    background-color:#ffb8d8;
+    color: #701d42;
+}
+
+.categoria-romance h3{
+    background-color:  #fddceb;
+    color: rgb(54, 54, 54);
+}
+
+
+.header-romance {
+    background-color: #ffb4d1;
+}
+
+.logo_container-romance img{
+    content: url(/images/BOOKFRIEND-romance.png) ;
+}
+
+.header-romance nav{
+    background-color: #ed86a8;
+}
+
+
+nav .nav-section-romance a{
+    color: #5e0f32;
+}
+
+nav .nav-section-romance a:hover{
+    background-color: #da5378;
+    font-weight: bold;
+}
+
+nav .nav-section-romance a.active{
+    color: #ffffff;
+    background-color: #da5378;
+    font-weight: bold;
+}
+
+/* FANTASÍA */
+
+.categoria-fantasia h1{
+    color: rgb(65, 65, 65);
+}
+
+.categoria-fantasia{
+    background-color: #e2f5ff;
+}
+
+.categoria-fantasia h2{
+    background-color:#8bd3fd;
+    color: #1e6994;
+}
+
+.categoria-fantasia h3{
+    background-color:  #cbedff;
+    color: rgb(54, 54, 54);
+}
+
+
+.header-fantasia {
+    background-color: #b2e4ff;
+}
+
+.logo_container-fantasia img{
+    content: url(/images/BOOKFRIEND-fantasia.png) ;
+}
+
+.header-fantasia nav{
+    background-color: #75c0eb;
+}
+
+
+nav .nav-section-fantasia a{
+    color: #073855;
+}
+
+nav .nav-section-fantasia a:hover{
+    background-color: #1c78ad;
+    font-weight: bold;
+}
+
+nav .nav-section-fantasia a.active{
+    color: #ffffff;
+    background-color: #1c78ad;
+    font-weight: bold;
+}
+
+/* MANGAS */
+
+.categoria-mangas h1{
+    color: rgb(65, 65, 65);
+}
+
+.categoria-mangas{
+    background-color: #ccadd348;
+}
+
+.categoria-mangas h2{
+    background-color:#ccadd3;
+    color: #61366b;
+}
+
+.categoria-mangas h3{
+    background-color:  #dcd8dd;
+    color: rgb(54, 54, 54);
+}
+
+
+.header-mangas {
+    background-color: #cdb9d1;
+}
+
+.logo_container-mangas img{
+    content: url(/images/BOOKFRIEND-mangas.png) ;
+}
+
+.header-mangas nav{
+    background-color: #b78ac1;
+}
+
+
+nav .nav-section-mangas a{
+    color: #80568a;
+}
+
+nav .nav-section-mangas a:hover{
+    background-color: #80568a;
+    font-weight: bold;
+}
+
+nav .nav-section-mangas a.active{
+    color: #ffffff;
+    background-color: #80568a;
+    font-weight: bold;
+}
+
+/* NOVELAS */
+
+.categoria-novelas h1{
+    color: rgb(65, 65, 65);
+}
+
+.categoria-novelas{
+    background-color: #fdf6e8;
+}
+
+.categoria-novelas h2{
+    background-color:#ffe7b4;
+    color: #81621f;
+}
+
+.categoria-novelas h3{
+    background-color:  #cebb94;
+    color: rgb(54, 54, 54);
+}
+
+
+.header-novelas {
+    background-color: #ffe7b4;
+}
+
+.logo_container-novelas img{
+    content: url(/images/BOOKFRIEND-novelas.png) ;
+}
+
+.header-novelas nav{
+    background-color: #dab882;
+}
+
+
+nav .nav-section-novelas a{
+    color: #724911
+}
+
+nav .nav-section-novelas a:hover{
+    background-color: #c98f3d;
+    font-weight: bold;
+}
+
+nav .nav-section-novelas a.active{
+    color: #ffffff;
+    background-color: #c98f3d;
+    font-weight: bold;
+}
+.main-about {
+    margin: 80px 5% 150px;
+    background: #b6d4e6;
+   
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #bdbcff;
+    height: 220px;
+    margin: 0;
+    border-top:#2c29c9 5px dashed;
+}
+footer p{
+    font-size: 25px;
+    color: #0e0c85;
+    font-weight: bold;
+}
+.about-container h2{
+    background: none;
+    margin-left: 50px;
+    font-size: 40px;
+
+}
+.about-container div{
+    text-align: justify;
+    font-size: 25px;
+    padding: 5%;
+    margin-bottom: 150px;
+    background-color: #dfeaff;
+}
+
+.rating-section {
+    text-align: center;
+}
+
+.rating-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-icon {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
+    justify-content: space-around; /* Coloca los elementos al principio y al final */
+    align-items: center;
+}
+
+form p{
+    color:#211f9e ;
+    font-weight: bold;
+}
+
+form section{
+    background-color: #1c78ad;
+    margin-bottom: 100px;
+    padding: 70px;
+    box-shadow: 0 6px 10px rgba(34, 85, 145, 0.89);
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 20px;
+}
